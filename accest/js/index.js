@@ -18,20 +18,10 @@ function next()
     // document.getElementById("screen").innerHTML = index + 1 +"/" + images.length;
     // document.getElementById("note").innerHTML = note[index];
 }
-function prev()
-{
-    index--;
-    console.log(images.length);
-    if(index < 0) index = images.length - 1;
-    var pic = document.getElementById("anh");
-    pic.src = images[index];
-    // document.getElementById("screen").innerHTML = index + 1 +"/" + images.length;
-    // document.getElementById("note").innerHTML = note[index];
-}
 
 function activeDot () {
     const dotList = document.querySelectorAll('.dot');
-    console.log(dotList)
+   
     for (let i = 0; i < dotList.length; i++) {
         if (index === i) {
             dotList[i].classList.add('active');
