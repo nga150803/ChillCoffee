@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
-    <link rel="stylesheet" href="./accest/css/dang_nhap.css">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="./accest/css/dang_ky.css">
 
 </head>
 
@@ -16,17 +16,26 @@
         <form>
             <div class="con">
                 <header class="head-form">
-                    <h2>Đăng nhập</h2>
+                    <h2>Đăng ký</h2>
                 </header>
                 <br>
                 <div class="field-set">
+                    <!--mail-->
+                    <span class="input-item">
+                        <i class="fa fa-key"></i>
+                    </span>
+                    <input type="email" name="email" value="" onchange="oc2()" id="email" class="form-input"
+                        placeholder="Email" required>
+                    <div id="loiemail"></div>
+
                     <!--   user name -->
                     <span class="input-item">
                         <i class="fa fa-user-circle"></i>
                     </span>
                     <!--   user name Input-->
-                    <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required>
-                    <br>
+                    <input class="form-input" id="txt-input" onchange="oc()" type="text" placeholder="@UserName" required>
+                    <div id="dmm"></div>
+                    <!-- <br> -->
                     <!--   Password -->
                     <span class="input-item">
                         <i class="fa fa-key"></i>
@@ -41,22 +50,11 @@
 
                     <button class="log-in"> <a href="./index.html"
                             style="text-decoration: none; font-size:16px; color:rgb(97, 95, 95)">Đăng
-                            nhập
+                            ký
                         </a></button>
                 </div>
-                <p style="font-family: roboto; color:rgb(81, 79, 79)">Chưa có tài khoản đăng ký? <a href="./dang_ky.html"><u
-                            style="color:blue">Tại đây</u></a> </p>
 
-                <!-- <div class="other">
 
-                    <button class="btn submits frgt-pass">Quên mật khẩu</button>
-
-                    <button class="btn submits sign-up"><a>Đăng ký</a>
-
-                        <i class="fa fa-user-plus" aria-hidden="true"></i>
-                    </button>
-
-                </div> -->
 
                 <!--   End Conrainer  -->
             </div>
